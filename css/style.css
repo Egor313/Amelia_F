@@ -2,6 +2,10 @@
 /* font-family: 'Montserrat', sans-serif; */
 
 /* !GLOBAL STYLES */
+html, body {
+	scroll-behavior: smooth;
+}
+
 body {
 font-family: 'Roboto', sans-serif;
 font-weight: 400;
@@ -22,25 +26,118 @@ font-size: 18px;
 }
 .flex-header {
 	display: flex;
-	flex-wrap: nowrap;
-	flex-direction: row;
-	/* justify-content: space-around; */
+	justify-content: space-between;
+	align-items: center;
+	
 	/* margin-bottom: 40px; */
 }
 .header-logo {
-	margin-right: 120px;
+	/* margin-right: 120px; */
 }
- .flex-header > div:nth-child(2) {
-	/* display: flex; */
-	/* flex-direction: row; */
-	/* flex-flow: column; */
-	/* __________________________ */
-	justify-content: space-between;
-	/* align-items: center; */
-	flex: 1 1 auto;
+ 
+.menu {
+	display: flex;	
+}
+
+.menu a {
+	line-height: 21px;
+	text-decoration: none;
+	color: inherit;
+}
+
+.menu > li + li {
+	margin-left: 90px;
+}
+/* ____________________________________________________ */
+
+/* Amelia Flowers */
+.amelia-fl {
+	background: #D8D8D6;
+	
+}
+
+.flex-main-sec {
+	display: flex;
+	flex-wrap: nowrap;
+	/* margin-bottom: 0 165px 120px 165px; */
+}
+
+.flex-main-lf .text-amelia {
+	line-height: 20px;
+	padding: 60px 30px 60px 0 ;
+}
+
+.flex-main-lf h1 {
+	font-size: 62px;
+	line-height: 64px;
+	padding: 178px 88px 0 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.order-bt {
+	font-family: 'Roboto', sans-serif;
+	background: #81A36B;
+	padding: 20px 30px;
+	margin-right: 65px;
+	font-size: 18px;
+	line-height: 21px;
+	text-decoration: none;
+	border: 1px solid #81A36B;
+	border-radius: 4px;
+    
+}
+.flex-main-lf a {
+	margin-right: 65px;
+	padding: 20px 16px;
+	font-size: 18px;
+	line-height: 21px;
+	text-decoration: none;
+	border: 1px solid #81A36B;
+	border-radius: 4px;
+    background: transparent;
+	color: inherit;
 }
 
 
+.main-img {
+	max-width: 540px;
+	min-width: 540px;
+	max-height: 670px;
+	min-height: 670px;
+}
+
+.main-img img {
+	object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.about_us {
+	background: #D8D8D6;
+	
+
+}
+
+.about_us h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	line-height: 34px;
+	padding: 120px 0 60px 0;
+	text-align: center;
+	
+}
+
+.about_us .text-about {
+	
+	width: 540px;
+	height: 88px;
+	line-height: 20px;
+	text-align: center;
+	padding: 0 0 200px 0;
+	margin: 0 auto;
+	
+}
+/* ____________________________________________________________ */
 
 
 
@@ -50,7 +147,114 @@ font-size: 18px;
 	padding: 80px 0;
 }
 .price-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
 }
+
+.price-text {
+	margin-right: 45px;
+}
+
+.content-img {
+	text-align: center;
+	margin-left: 30px;
+}
+/* _____________________________________________________________ */
+
+	
+/* !How we work */
+
+.how_work {
+	background: #D8D8D6;
+}
+
+.flex-bottom {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.flex-main-rt .text-how_work  {
+	line-height: 20px;
+	padding: 60px 30px;
+	text-align: center;
+}
+
+.flex-main-rt h2 {
+	font-size: 32px;
+	line-height: 34px;
+	padding: 200px 0 0 150px;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+.second-img {
+	max-width: 540px;
+	min-width: 540px;
+	max-height: 560px;
+	min-height: 560px;
+	margin: 120px 0 120px 0;
+
+	/* width: 100%;
+    height: 100%; */
+	/* object-fit: cover; */
+}
+
+.second-img img {
+	object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/* _______________________________________________ */
+
+/* !Our works */
+
+.our-works-bg {
+	background: #D8D8D6;
+}
+
+.our-works {
+	display: flex;
+	justify-content: space-between;
+	/* flex-direction: row; */
+}
+
+.work-text {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	line-height: 34px;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.card {
+width: 350px;
+height: 512px;
+background: #81A36B;
+padding: 15px 15px 0 15px;
+margin-bottom: 120px;
+}
+
+.card-text {
+text-align: center;
+padding: 23px 0 40px 0;
+}
+
+.flower-card {
+
+}
+.works-img a {
+	object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
 
 
 /* !FOOTER */
@@ -66,7 +270,7 @@ font-size: 18px;
 }
 
 .flex-conteiner h3 {
-	font-size: 24px;
+	font-size: 25px;
 	line-height: 26px;
 	margin-bottom: 40px;
 }
@@ -83,6 +287,16 @@ font-size: 18px;
 /* .footer-contact ul > li:last-child {
 	margin-bottom: 0;
 } */
+
+.footer-social h3 {
+	margin-bottom: 40px;
+}
+
+.social-icons {
+	display: flex;
+	justify-content: space-evenly;
+}
+
 .footer-year {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
