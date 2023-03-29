@@ -908,18 +908,23 @@ padding: 23px 0 40px 0;
 }
 
 @media screen and (max-width: 380px) {
-			
+	
+	.but-sec {
+		flex-direction: column;
+	}
+
 	.order-bt {
 		padding: 12px 8px;
-		margin: 0 20px;
-		font-size: 14px;
-		line-height: 16px;
+		font-size: 18px;
+		line-height: 20px;
+		margin: 0 0 15px;
 		
 	}
 	.flex-main-lf a {
 		padding: 12px 6px;
-		font-size: 14px;
-		line-height: 16px;
+		font-size: 18px;
+		line-height: 20px;
+		text-align: center;
 	}
 	
 	.flex-main-rt h2 {
